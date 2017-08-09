@@ -1,4 +1,4 @@
-# yes
+# vue web
 
 > A Vue.js project
 
