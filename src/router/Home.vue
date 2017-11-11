@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="home">
     <h1>{{ msg }}</h1>
     <h2>My name is Jiang!</h2>
   </div>
@@ -7,15 +7,10 @@
 
 <script>
 export default {
-  name: 'hello',
+  name: 'home',
   data () {
     return {
       msg: 'Welcome to My Web Site'
-    }
-  },
-  methods: {
-    toNewpage: function () {
-      this.$router.push({path: '/helloWorld/999', query: {userid: 128, name: 'dada'}})
     }
   }
 }
