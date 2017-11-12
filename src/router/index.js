@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import helloWorld from '@/components/helloWorld'
 import Home from './Home'
-import Demo from './Demo/Demo'
+import Demo from './Demo/Demo.vue'
 
 Vue.use(Router)
 
