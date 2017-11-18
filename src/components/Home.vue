@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <img src="../assets/logo.png">
     <h1>{{ msg }}</h1>
     <h2>My name is Jiang!</h2>
   </div>
@@ -20,6 +21,10 @@ export default {
 <style scoped>
 h1, h2 {
   font-weight: normal;
+}
+
+h1 {
+  margin-bottom: 10px;
 }
 
 ul {
