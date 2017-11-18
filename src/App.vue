@@ -3,7 +3,7 @@
     <div id="layout">
       <v-breadcrumb>
         <v-breadcrumb-item>
-          <a href="./#">
+          <a href="/">
           <v-icon :type="'home'"></v-icon>
             首页
           </a>
