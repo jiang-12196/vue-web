@@ -8,19 +8,20 @@
     <ul class="menu-item-list" >
       <menu-item
         v-for="(item, itemIndex) in iconImgArr"
-        :radius="radius"
-         :index="itemIndex"
-         :angleCur="startAngle+angleStep*itemIndex"
-         :animationDuration="animationDuration"
-         :itemAnimationDelay="0 + (itemIndex * itemAnimationDelay)"
-         :icon="'icon-'+item.iconName"
-         :showItem="showItem"
-         :isOpen="isOpen"
-         :total="iconImgArr.length"
-         :currentIndex="currentIndex"
+          :radius="radius"
+          :index="itemIndex"
+          :angleCur="startAngle+angleStep*itemIndex"
+          :animationDuration="animationDuration"
+          :itemAnimationDelay="0 + (itemIndex * itemAnimationDelay)"
+          :icon="'icon-'+item.iconName"
+          :showItem="showItem"
+          :isOpen="isOpen"
+          :total="iconImgArr.length"
+          :currentIndex="currentIndex"
           v-on:showItemChange="showItemChange"
           v-on:isOpenChange="isOpenChange"
           v-on:animationCountIncrease=" (val) => {animationCountIncrease(val)}"
+          key="itemIndex"
       >
       </menu-item>
 

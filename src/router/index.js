@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Layout from '@/components/Layout'
 // import Home from '@/components/Home'
-import Demo from './Demo/Demo.vue'
+import Demo from '@/components/Demo/Demo.vue'
 
 Vue.use(Router)
 

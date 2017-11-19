@@ -16,17 +16,18 @@
         </v-breadcrumb-item>
       </v-breadcrumb>
     </div>
-  <child />
+  <home />
   </div>
 </template>
 
 <script>
   // import {vBreadcrumb} from 'vue-antd'
+//  import Vue from 'vue'
   import home from './Home.vue'
   export default {
     name: 'layout',
     components: {
-      'child': home
+      home
     }
   }
 </script>
