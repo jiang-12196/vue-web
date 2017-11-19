@@ -1,13 +1,49 @@
-<template>  
-  <v-breadcrumb>
-    <v-breadcrumb-item href="./home"><v-icon :type="'home'"></v-icon>首页</v-breadcrumb-item>
-    <v-breadcrumb-item href="./demo"><v-icon :type="'user'"></v-icon>Demon</v-breadcrumb-item>
-  </v-breadcrumb>
+<template>
+  <div>
+    <div id="layout">
+      <v-breadcrumb>
+        <v-breadcrumb-item>
+          <a href="/">
+          <v-icon :type="'home'"></v-icon>
+            首页
+          </a>
+        </v-breadcrumb-item>
+        <v-breadcrumb-item>
+          <a href="./#/demo">
+          <v-icon :type="'app'"></v-icon>
+            Demo
+          </a>
+        </v-breadcrumb-item>
+      </v-breadcrumb>
+    </div>
   <child />
+  </div>
 </template>
 
 <script>
-export default {
-  name: 'layout'
-}
+  // import {vBreadcrumb} from 'vue-antd'
+  import home from './Home.vue'
+  export default {
+    name: 'layout',
+    components: {
+      'child': home
+    }
+  }
 </script>
+
+<style scoped>
+#layout {
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #d3d3d3;
+  margin: 0 10px;
+}
+
+a:hover {
+  color: #e3e3e3;
+}
+</style>

@@ -1,20 +1,27 @@
 <template>
-  <div class="home">
-    <img src="../assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>My name is Jiang!</h2>
+  <div>
+    <div class="home">
+      <img src="../assets/logo.png">
+      <h1>{{ msg }}</h1>
+      <h2>My name is Jiang!</h2>
+    </div>
+    <Corner />
   </div>
 </template>
 
 <script>
-export default {
-  name: 'home',
-  data () {
-    return {
-      msg: 'Welcome to My Web Site'
+  import Corner from '../Corner.vue'
+  export default {
+    name: 'home',
+    data () {
+      return {
+        msg: 'Welcome to My Web Site'
+      }
+    },
+    components: {
+      'Corner': Corner
     }
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
