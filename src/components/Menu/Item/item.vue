@@ -2,7 +2,9 @@
     <li class="item" ref="item" :style="styleArr" @click="changeShowItem">
       <transition :name="currentIndex === index?'item-selected':'item-not-selected'">
         <div class="item-wrapper" v-show="showItem"  @animationend="animationEnd">
-          <button class="item-btn" :class="[icon]"></button>
+          <a :href="url">
+            <button class="item-btn" :class="[icon]"></button>
+          </a>
         </div>
       </transition>
     </li>
@@ -87,7 +89,8 @@
       showItem: Boolean,
       isOpen: Boolean,
       total: Number,
-      currentIndex: Number
+      currentIndex: Number,
+      url: String
     },
     data () {
       return {

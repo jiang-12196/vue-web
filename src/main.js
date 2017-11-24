@@ -3,8 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Corner from './components/Corner'
 
 Vue.config.productionTip = false
+
+Vue.component('Corner', Corner)
 
 /* eslint-disable no-new */
 new Vue({

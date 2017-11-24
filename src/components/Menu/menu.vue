@@ -14,6 +14,7 @@
           :animationDuration="animationDuration"
           :itemAnimationDelay="0 + (itemIndex * itemAnimationDelay)"
           :icon="'icon-'+item.iconName"
+          :url="item.url"
           :showItem="showItem"
           :isOpen="isOpen"
           :total="iconImgArr.length"

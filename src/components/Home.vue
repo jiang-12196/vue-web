@@ -5,12 +5,11 @@
       <h1>{{ msg }}</h1>
       <h2>My name is Jiang!</h2>
     </div>
-    <Corner />
   </div>
 </template>
 
 <script>
-  import Corner from '../Corner.vue'
+  import Corner from './Corner.vue'
   export default {
     name: 'home',
     data () {
