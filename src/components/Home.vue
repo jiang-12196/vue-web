@@ -4,6 +4,9 @@
       <img src="../assets/logo.png">
       <h1>{{ msg }}</h1>
       <h2>My name is Jiang!</h2>
+      <div>
+        <img src="../../static/movie.gif" alt="img"/>
+      </div>
     </div>
   </div>
 </template>
