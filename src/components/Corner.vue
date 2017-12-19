@@ -32,7 +32,7 @@
       iconImgArr () {
         let tmp = []
         tmp.push(this.genarateIconObj(house, 'house', '50', '/#/'))
-        tmp.push(this.genarateIconObj(datas, 'datas', '50', './#/table'))
+        tmp.push(this.genarateIconObj(datas, 'datas', '50', 'http://120.78.211.99:7070/user/jiang-12196'))
         tmp.push(this.genarateIconObj(info, 'info', '50', './#/demo'))
         tmp.push(this.genarateIconObj(money, 'money', '50', './#/404'))
         return tmp
